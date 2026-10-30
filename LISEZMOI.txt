@@ -1,0 +1,30 @@
+JARVIS : comment obtenir jarvis.exe (sans rien installer sur ton PC)
+=====================================================================
+
+Je ne peux pas fabriquer un .exe Windows moi-même. GitHub (gratuit) le fabrique à ta place en 5 minutes.
+
+1. Crée un compte gratuit sur github.com (ou connecte-toi).
+2. Clique sur « + » en haut à droite, puis « New repository ». Nom : jarvis. Laisse « Public ». Clique « Create repository ».
+3. Sur la page du dépôt, clique « uploading an existing file ». Glisse dedans TOUT le contenu de ce dossier :
+   jarvis.py, requirements.txt et le dossier .github (avec son contenu). Clique « Commit changes ».
+   Si le dossier .github ne passe pas : clique « Add file » puis « Create new file », tape comme nom
+   .github/workflows/jarvis-exe.yml   puis colle le contenu du fichier jarvis-exe.yml (fourni à côté), puis « Commit changes ».
+4. Onglet « Actions », puis « Construire jarvis.exe », puis « Run workflow » (deux fois, le second bouton vert).
+5. Attends environ 5 minutes (pastille verte). Ouvre l'exécution terminée, descends à « Artifacts »,
+   télécharge « jarvis-exe », dézippe : tu obtiens jarvis.exe. C'est tout ce dont tu as besoin.
+6. Double-clique sur jarvis.exe. Si Windows affiche « Windows a protégé votre PC » : « Informations complémentaires »,
+   puis « Exécuter quand même » (le fichier n'est pas signé numériquement ; un antivirus peut aussi lever une fausse alerte).
+
+PREMIER LANCEMENT
+- Clique « Clé IA » et colle une clé GRATUITE Gemini (aistudio.google.com/apikey, 2 minutes, sans carte bancaire).
+  Sans clé, Jarvis garde toutes les commandes rapides mais ne discute pas et ne réalise pas de projets.
+- Dis « Jarvis » puis ta demande, ou appuie sur Ctrl+Alt+J depuis n'importe où.
+- Dis « démarre avec Windows » pour qu'il se lance tout seul.
+- Pour l'administration avancée (registre HKLM, services, périphériques) : bouton « Admin ».
+
+SÉCURITÉ ET VIE PRIVÉE
+- Avant toute action qui modifie le PC (supprimer, installer, exécuter du code, registre, services...), Jarvis te montre
+  la commande exacte et te demande ton accord.
+- « Confiance : oui » supprime ces confirmations, sauf pour les actions destructrices (formater un disque, supprimer des dossiers système...).
+- Ta clé et tes notes restent sur ton PC (dossier .jarvis de ton profil Windows).
+- Avec une clé, tes demandes (et les captures d'écran que Jarvis regarde) sont envoyées à Google (Gemini) ou Groq pour être traitées.

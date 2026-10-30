@@ -1,0 +1,10 @@
+numpy
+sounddevice
+SpeechRecognition
+psutil
+pillow
+python-pptx
+pypdf
+openpyxl
+edge-tts
+pyinstaller
